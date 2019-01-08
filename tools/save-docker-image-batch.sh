@@ -1,2 +1,3 @@
 #!/bin/bash
-./save-docker-image.sh --image\="gitea/gitea:1.4"
+DIR=$(cd "$(dirname "$0")";pwd)
+./save-docker-image.sh --image\="gitea/gitea:1.6.3" --target-dir=$DIR/../docker
