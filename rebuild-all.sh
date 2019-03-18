@@ -17,7 +17,7 @@ do
     shift
 done
 
-spk_version=0100
+spk_version=0101
 
 gitea_package_name="gitea/gitea"
 declare -A versions;      declare -a orders;
@@ -27,7 +27,10 @@ declare -A versions;      declare -a orders;
 #versions["1.4.2"]="34"; orders+=( "1.4.2" )
 #versions["1.5.0"]="37"; orders+=( "1.5.0" )
 #versions["1.5.1"]="37"; orders+=( "1.5.1" )
-versions["1.6.3"]="39"; orders+=( "1.6.3" )
+#versions["1.6"]="39"; orders+=( "1.6" )
+#versions["1.7"]="42"; orders+=( "1.7" )
+#versions["1.7.1"]="42"; orders+=( "1.7.1" )
+versions["1.7.3"]="42"; orders+=( "1.7.3" )
 
 for i in "${!orders[@]}"
 do
